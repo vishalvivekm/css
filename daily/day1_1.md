@@ -1,3 +1,8 @@
+**566.9(98.4% match)**
+![Screenshot from 2023-11-17 20-10-05](https://github.com/vishalvivekm/css/assets/110674407/d25d5cf7-af4f-42c0-acf6-f5debba6fd2b)
+
+```
+// first go
 <div class="parent"><div class="triangle"></div><div class="rectangle"></div><div class="line"></div></div>
 <style>
   * {
@@ -29,3 +34,4 @@
     background-color: #5B8395;
   }
 </style>
+```
