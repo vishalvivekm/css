@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+    padding: 3em;
+    place-items: center;
+}
+
+h1 { margin: 0; }
+
+code {
+    background: #eeeeee;
+    padding: .1em .2em;
+    border-radius: .1em;
+}
+
+.box {
+    background: white;
+    padding: 2em;
+    position: relative;
+}
+
+.box--lower {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+}
+
+.box--higher {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0, .5);
+}

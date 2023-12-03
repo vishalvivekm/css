@@ -1,0 +1,63 @@
+.box {
+    background: white;
+    padding: 2em;
+   /*box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,.5);*/
+
+   box-shadow: 100px 100px 200px red,
+               100px -100px 200px blue,
+               -100px -100px 200px green,
+               -100px 100px 200px purple;
+
+    /*box-shadow: 20px 20px 20px 20px;*/
+}
+code {
+    background: #eee;
+    padding: .1em .2em;
+    border-radius: .1em;
+}
+
+body {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    min-height: 99vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/*
+box-shadow : at least 2 values, % won't work
+box-shadow: <horizontal-offset(+x direction)> <vertical-offset(-y direction)>
+
+box-shadow: -20px -20px;
+
+box-shadow: -20px -20px 200px; ( blur: gradual decline, no -ve values)
+box-shadow: 20px 20px 20px 20px; ( spread, -ve value is allowed)
+
+    color: blue;
+    box-shadow: 0px 0px 20px 20px currentColor; ( matches color value by default, to be on a safe side use currentcolor)
+
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,.5);
+
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,.5); ( moves shadow inside of the box, inset shadow goes on top of background color but behind any content in the box)
+
+( only required values are h and v offset), can skip blur and spread and put the color
+
+box-shadow: inset 20px 20px red;
+
+box-shadow: h-offset v-offset blur spread color
+h-offset, v-offset: can take -ve values, but no % values
+blur: no -ve values
+spread( pushes the blur): -ve value is allowed
+
+   box-shadow: 100px 100px 200px red,
+               100px -100px 200px blue,
+               -100px -100px 200px green,
+               -100px 100px 200px purple;
+red one is on top, blue one underneath that, green one  underneath blue, and finally comes the purple one all the way down in the end
+*/
