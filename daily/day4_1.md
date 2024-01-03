@@ -1,5 +1,7 @@
 <p><p a>
+<div></div>
 <style>
+  
   * {
     background: #33499F;
     margin: 0;
@@ -20,8 +22,15 @@
     margin: -30 -50;
     /* z-index: -2; */
   }
-    .red {
+    div {
+      position: absolute;
+      height: 50px;
+      width: 15px;
+      margin-top: -85px;
+      margin-left: 110px;
     background: #DE3832;
+      box-shadow: 65px 0 #DE3832;
+  
   }
 </style>
 
